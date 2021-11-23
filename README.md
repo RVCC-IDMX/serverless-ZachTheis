@@ -1,5 +1,8 @@
 # Serverless Functions
 
+This program creates a site designed to run a serverless function via netlify. The program will load a random joke from [ICanHazDadJoke](https://icanhazdadjoke.com/) every 10 seconds.
+
+Credit to Dave Grey for the initial code. Information on it can be found below:
 ✅ [Check out my YouTube Channel with all of my tutorials](https://www.youtube.com/DaveGrayTeachesCode).
 
 **Description:**

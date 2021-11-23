@@ -5,17 +5,16 @@ const getRandomDadJoke = async () => {
   //     Accept: 'application/json',
   //   },
   // });
-  try {
-    const url = '/.netlify/functions/jokes';
-    const jokeStream = await fetch(url);
-    const jsonJoke = await jokeStream.json();
-    // eslint-disable-next-line prefer-destructuring
-    const joke = jsonJoke.joke;
-    return joke;
-  } catch (err) {
-    console.log(err);
-    return 'Sorry, not in a joking mood. Someone touched my thermostat.';
+  const url = '/.netlify/functions/jokes';
+  const jokeStream = await fetch(url);
+  if (!jokeStream.ok) {
+    console.log(`Error fetching joke ${jokeStream.statusText}`);
+    return "Sorry, I'm not in a joking mood. Someone touched my thermostat.";
   }
+  const jsonJoke = await jokeStream.json();
+  // eslint-disable-next-line prefer-destructuring
+  const joke = jsonJoke.joke;
+  return joke;
 };
 
 const displayJoke = (joke) => {
