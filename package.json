@@ -1,0 +1,27 @@
+{
+  "name": "serverless-zachtheis",
+  "version": "1.0.0",
+  "description": "✅ [Check out my YouTube Channel with all of my tutorials](https://www.youtube.com/DaveGrayTeachesCode).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVCC-IDMX/serverless-ZachTheis.git"
+  },
+  "keywords": [],
+  "author": "Zach Theis <G00286554@stu.raritanval.edu> (https://github.com/ZachTheis)",
+  "license": "RVCC",
+  "bugs": {
+    "url": "https://github.com/RVCC-IDMX/serverless-ZachTheis/issues"
+  },
+  "homepage": "https://github.com/RVCC-IDMX/serverless-ZachTheis#readme",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "prettier": "^2.4.1"
+  }
+}
